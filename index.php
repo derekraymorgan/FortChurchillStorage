@@ -26,6 +26,8 @@
 <div class="row mainContent">
 
 	<h1 class="row pageTitle">Welcome to Fort Churchill Storage!</h1>
+	<h3 class="row pageTitlePhone">(775)-577-4000</h3>
+
 
 	<div class="row">
 

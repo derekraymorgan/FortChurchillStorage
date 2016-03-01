@@ -1,20 +1,59 @@
-pricing.php<!DOCTYPE html>
+
+
+
+<!DOCTYPE html>
 
 <html lang = "en-US">
 
+
 <?php
 
-	include('includes/sections/header.php');
+include('includes/sections/head.php');
+include('includes/functions/create_price_table.php');
 
 ?>
 
-<div id = 'main_content'>
+<body class="container-fluid">
 
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="VAG2KESCYXGKC">
-		<table>
-			<tr><td><input type="hidden" name="on0" value="Make a Payment">Make a Payment</td></tr><tr><td><select name="os0">
+
+<?php
+
+include('includes/sections/header.php');
+
+?>
+
+<?php
+
+include('includes/sections/nav.php');
+
+?>
+
+<div class="row mainContent">
+
+	<h2 class="row pageTitle">Choose from the payment options below.</h2>
+
+	<div class="row payments">
+
+		<div class="col-xs-12 col-md-6">
+
+			<div class="col-xs-1"></div>
+
+			<div class="col-xs-10 paymentOption">
+
+				<h3>Single Payment</h3>
+
+				<p>If you would like to make a single one time payment then use the form below.</p>
+
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+					<input type="hidden" name="cmd" value="_s-xclick">
+
+					<input type="hidden" name="hosted_button_id" value="VAG2KESCYXGKC">
+
+					<input type="hidden" name="on0" value="Make a Payment">
+					<span>Make a Payment</span>
+
+					<select name="os0">
 						<option value="5x10 Storage Unit">5x10 Storage Unit $35.00 USD</option>
 						<option value="10x10 Storage Unit">10x10 Storage Unit $45.00 USD</option>
 						<option value="15x10 Storage Unit">15x10 Storage Unit $55.00 USD</option>
@@ -22,21 +61,51 @@ pricing.php<!DOCTYPE html>
 						<option value="30x10 Storage Unit">30x10 Storage Unit $110.00 USD</option>
 						<option value="40x10 Storage Unit">40x10 Storage Unit $130.00 USD</option>
 						<option value="Covered RV Parking">Covered RV Parking $40.00 USD</option>
-					</select> </td></tr>
-			<tr><td><input type="hidden" name="on1" value="Unit number and customer name">Unit number and customer name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-		</table>
-		<input type="hidden" name="currency_code" value="USD">
-		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
+					</select>
+					<br>
+					<input type="hidden" name="on1" value="Unit number and customer name">
+					<br>
 
-	<br>
+					<p>Enter unit number and customer name below</p>
 
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="ND6HDFL9JNFUJ">
-		<table>
-			<tr><td><input type="hidden" name="on0" value="Monthly Recurring Payments">Monthly Recurring Payments</td></tr><tr><td><select name="os0">
+					<input type="text" name="os1" maxlength="200">
+
+					<input type="hidden" name="currency_code" value="USD">
+
+					<br>
+					<br>
+
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+
+			</div>
+
+			<div class="col-xs-1"></div>
+
+
+		</div>
+
+		<div class="col-xs-12 col-md-6">
+
+			<div class="col-xs-1"></div>
+
+			<div class="col-xs-10 paymentOption">
+
+				<h3>Recurring Monthly Payments</h3>
+
+				<p>If you would like to sign up for recurring monthly payments then use the form below.</p>
+
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="ND6HDFL9JNFUJ">
+
+					<input type="hidden" name="on0" value="Monthly Recurring Payments">
+
+					<span>Monthly Recurring Payments</span>
+
+					<select name="os0">
 						<option value="5x10 Storage Unit">5x10 Storage Unit : $35.00 USD - monthly</option>
 						<option value="10x10 Storage Unit">10x10 Storage Unit : $45.00 USD - monthly</option>
 						<option value="15x10 Storage Unit">15x10 Storage Unit : $55.00 USD - monthly</option>
@@ -44,21 +113,36 @@ pricing.php<!DOCTYPE html>
 						<option value="30x10 Storage Unit">30x10 Storage Unit : $110.00 USD - monthly</option>
 						<option value="40x10 Storage Unit">40x10 Storage Unit : $130.00 USD - monthly</option>
 						<option value="Covered RV Parking">Covered RV Parking : $40.00 USD - monthly</option>
-					</select> </td></tr>
-			<tr><td><input type="hidden" name="on1" value="Unit number and customer name">Enter unit number and customer name below</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-		</table>
-		<input type="hidden" name="currency_code" value="USD">
-		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
+					</select>
+
+					<br>
+
+					<input type="hidden" name="on1" value="Unit number and customer name">
+
+					<br>
+					<p>Enter unit number and customer name below</p>
+
+					<input type="text" name="os1" maxlength="200">
+
+					<input type="hidden" name="currency_code" value="USD">
+
+					<br>
+					<br>
+
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+				</form>
+
+			</div>
+
+			<div class="col-xs-1"></div>
+
+		</div>
 
 
-
-
-
-
-
-
+	</div>
 
 	<?php
 
@@ -73,3 +157,10 @@ pricing.php<!DOCTYPE html>
 </body>
 
 </html>
+
+
+
+
+
+
+

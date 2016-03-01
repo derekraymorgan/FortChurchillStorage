@@ -34,7 +34,7 @@ include('includes/sections/nav.php');
 
 	<div class="row">
 
-		<div class="col-xs-6 textSizer">
+		<div class="col-xs-12 col-sm-12 col-md-6 textSizer">
 
 			<?php
 
@@ -60,7 +60,7 @@ include('includes/sections/nav.php');
 		</div>
 
 
-		<div class="col-xs-6">
+		<div class="col-xs-6 hidden-xs hidden-sm">
 
 			<div id = 'pricing_photo_box_top'>
 
