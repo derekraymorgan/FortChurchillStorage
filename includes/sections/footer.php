@@ -1,4 +1,6 @@
-<footer>
+
+<br>
+<footer clas="row">
 	Fort Churchill Storage <br>
 	3850 Hwy 95-A <br>
 	Silver Springs NV, 89429 <br>
