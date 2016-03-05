@@ -108,7 +108,7 @@ body
 
 .textOffset
 {
-    padding-left: 5px;
+    padding-left: 4%;
 }
 
 /*
@@ -242,7 +242,7 @@ footer
 
 #features_list li
 {
-    margin: 5px 0px 0px 0px;
+    margin: 5px 0px 0px 4%;
     font-size: 120%;
 
 }

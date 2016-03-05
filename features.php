@@ -27,12 +27,14 @@ include('includes/sections/nav.php');
 
 	<h1 class="row pageTitle">Fort Churchill Storage has great features!</h1>
 
+	<br>
+
 	<div class="row">
 
 		<div class="col-xs-6 textSizer">
 
-			<p class="textOffset">
-				<ul id = 'features_list'>
+			<p>
+				<ul class="textOffset" id = 'features_list'>
 
 					<li>Many different unit sizes ranging from 5x10 to 10x40</li>
 					<li>Fully fenced and paved facility</li>
