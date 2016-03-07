@@ -382,6 +382,9 @@ form
 .paymentOption
 {
     border: black 2px solid;
+    height: 450px;
+    #padding: 0px 2% 0px 2%;
+    margin-top: 2%;
 }
 
 select
